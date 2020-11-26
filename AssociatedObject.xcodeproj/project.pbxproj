@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0473940E2539965B00D71876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473940D2539965B00D71876 /* AppDelegate.m */; };
-		047394112539965B00D71876 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047394102539965B00D71876 /* SceneDelegate.m */; };
 		047394142539965B00D71876 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047394132539965B00D71876 /* ViewController.m */; };
 		047394172539965B00D71876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047394152539965B00D71876 /* Main.storyboard */; };
 		047394192539966100D71876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047394182539966100D71876 /* Assets.xcassets */; };
@@ -16,6 +15,9 @@
 		0473941F2539966100D71876 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473941E2539966100D71876 /* main.m */; };
 		047394292539966100D71876 /* AssociatedObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047394282539966100D71876 /* AssociatedObjectTests.m */; };
 		047394342539966100D71876 /* AssociatedObjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047394332539966100D71876 /* AssociatedObjectUITests.m */; };
+		0473944425399CCE00D71876 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473944325399CCE00D71876 /* TestVC.m */; };
+		0473944725399DF400D71876 /* UIViewController+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473944625399DF400D71876 /* UIViewController+Associate.m */; };
+		04EB4C38253D3B67003699D9 /* 关联策略.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EB4C37253D3B67003699D9 /* 关联策略.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		047394092539965B00D71876 /* AssociatedObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssociatedObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0473940C2539965B00D71876 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0473940D2539965B00D71876 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0473940F2539965B00D71876 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		047394102539965B00D71876 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		047394122539965B00D71876 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		047394132539965B00D71876 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		047394162539965B00D71876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +54,11 @@
 		0473942F2539966100D71876 /* AssociatedObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssociatedObjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047394332539966100D71876 /* AssociatedObjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjectUITests.m; sourceTree = "<group>"; };
 		047394352539966100D71876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0473944225399CCE00D71876 /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		0473944325399CCE00D71876 /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		0473944525399DF400D71876 /* UIViewController+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Associate.h"; sourceTree = "<group>"; };
+		0473944625399DF400D71876 /* UIViewController+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Associate.m"; sourceTree = "<group>"; };
+		04EB4C37253D3B67003699D9 /* 关联策略.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关联策略.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,15 +111,14 @@
 			children = (
 				0473940C2539965B00D71876 /* AppDelegate.h */,
 				0473940D2539965B00D71876 /* AppDelegate.m */,
-				0473940F2539965B00D71876 /* SceneDelegate.h */,
-				047394102539965B00D71876 /* SceneDelegate.m */,
 				047394122539965B00D71876 /* ViewController.h */,
 				047394132539965B00D71876 /* ViewController.m */,
-				047394152539965B00D71876 /* Main.storyboard */,
-				047394182539966100D71876 /* Assets.xcassets */,
-				0473941A2539966100D71876 /* LaunchScreen.storyboard */,
-				0473941D2539966100D71876 /* Info.plist */,
-				0473941E2539966100D71876 /* main.m */,
+				0473944225399CCE00D71876 /* TestVC.h */,
+				0473944325399CCE00D71876 /* TestVC.m */,
+				0473944525399DF400D71876 /* UIViewController+Associate.h */,
+				0473944625399DF400D71876 /* UIViewController+Associate.m */,
+				04EB4C37253D3B67003699D9 /* 关联策略.png */,
+				047394412539979C00D71876 /* Others */,
 			);
 			path = AssociatedObject;
 			sourceTree = "<group>";
@@ -135,6 +139,18 @@
 				047394352539966100D71876 /* Info.plist */,
 			);
 			path = AssociatedObjectUITests;
+			sourceTree = "<group>";
+		};
+		047394412539979C00D71876 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0473941D2539966100D71876 /* Info.plist */,
+				047394152539965B00D71876 /* Main.storyboard */,
+				047394182539966100D71876 /* Assets.xcassets */,
+				0473941A2539966100D71876 /* LaunchScreen.storyboard */,
+				0473941E2539966100D71876 /* main.m */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +258,7 @@
 			files = (
 				0473941C2539966100D71876 /* LaunchScreen.storyboard in Resources */,
 				047394192539966100D71876 /* Assets.xcassets in Resources */,
+				04EB4C38253D3B67003699D9 /* 关联策略.png in Resources */,
 				047394172539965B00D71876 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0473944725399DF400D71876 /* UIViewController+Associate.m in Sources */,
+				0473944425399CCE00D71876 /* TestVC.m in Sources */,
 				047394142539965B00D71876 /* ViewController.m in Sources */,
 				0473940E2539965B00D71876 /* AppDelegate.m in Sources */,
 				0473941F2539966100D71876 /* main.m in Sources */,
-				047394112539965B00D71876 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +459,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MCBLL5HW5;
-				INFOPLIST_FILE = AssociatedObject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AssociatedObject/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +477,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MCBLL5HW5;
-				INFOPLIST_FILE = AssociatedObject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AssociatedObject/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
