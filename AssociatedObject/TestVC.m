@@ -13,7 +13,7 @@
 //__weak修饰的指针，在其所指的对象被释放后，指针会自动置nil
 __weak NSString *weakDwlStrong = nil;
 __weak NSString *weakDwlCopy = nil;
-__weak NSString *weakDwlAssgin = nil;
+NSString __weak *weakDwlAssgin = nil; //和上面那种写法应该是等效的
 
 
 @interface TestVC ()
